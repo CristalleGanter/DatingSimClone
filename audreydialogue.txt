@@ -1,0 +1,80 @@
+greeting1:Oh... hey.
+
+greeting2:Are you like following me around or something?
+
+greeting3:Ugh, there you are. Could you have taken any longer?
+
+
+
+lastName:Belrose. There, happy?
+
+birthday:Actually, please do forget it.
+
+height:Five-two. What of it? I can still knock a bitch out.
+
+
+age:I'm 21. Finally old enough to drink without having to hide it.
+
+agequiz:Do you even know how old I am?
+
+occupation:Work? Bitch I'm already going to school. What else do you expect?
+
+education:I haven't decided on a major. I'm thinking of dropping out, anyway.
+
+
+hobby:I like to go shopping. Especially when someone else is paying.
+
+
+dateaccept:Okay... If I go out with you will you stop bothering me?
+datereject:Eww, no!
+
+datefail:Well, that was a total blowout. Thanks for wasting my fucking time.
+
+datesuccess:I guess that wasn't a complete waste of time.
+
+favColor:If you can't tell that my favorite color is red, you must be fucking blind.
+
+favSeason:Probably spring because it's not cold as shit or hot as fuck.
+
+favHangout:Lusties Nightclub is my fucking shit.
+
+question1:What do you hate most about dating?
+q1answer1:Running out of things to say or do.
+q1answer2:Pretty much everything.
+q1answer3:Having to weed through all the bitches.
+ifcorrect1:Oh my god, you too? It's so much easier just to fuck around.
+ifwrong1:Yeah, okay.
+
+question2:So, what's your opinion on going to university?
+q2answer1:It's the only way to get ahead in this world.
+q2answer2:School is nothing but a waste of time and money.
+q2answer3:It's fine if you're smart...
+ifcorrect2:Finally someone agrees! It's so boring. How am I supposed to deal with that?
+ifwrong2:Ughh, gaaayyy!
+
+
+question3:What's your biggest turn off? Huh?
+q3answer1:Chicks who smoke. Ughh, it's so gross.
+q3answer2:Flat chested girls make me sad.
+q3answer3:Broads who don't know how to let loose and have fun.
+ifcorrect3:Well you don't have to worry about me. Fun is pretty much my deal.
+ifwrong3:Ughh! Fuck you, you dickhead.
+
+
+
+
+beforesheasks1:Since you're here, you can answer this for me.
+
+beforesheasks2:Okay, I wanna know something.
+
+beforeplayerasks1:Yeah? Out with it.
+
+beforeplayerasks2:What?
+
+
+
+
+bye1:Finally...
+
+bye2:Please, you'll be back.
+bye3:See ya.

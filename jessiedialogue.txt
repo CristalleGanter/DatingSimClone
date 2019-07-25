@@ -1,0 +1,69 @@
+greeting1:Hey you, I'm glad you're here. Nobody wants to buy me a drink...
+
+greeting2:Hiii Momma...
+
+greeting3:Oh, goodie! My sexy girlfriend is here.
+
+
+
+lastName:My real one? It's Maye.
+
+birthday: I was born on the twenty-seventh of January.
+
+
+
+
+occupation:I'm an... "actress." You see, I make very special videos for my fans.
+
+education: Oh, no, honey. I had to drop out of highschool to care for my daughter.
+
+
+
+hobby:My hobby? Hmm... Does getting drunk count?
+
+
+dateaccept:I would never say no to you sweetie.
+datereject:Why don't you buy me a drink first?
+
+datefail:Don't worry sweetie... everyone has an off day once in a while.
+datesuccess:I almost forgot how fun this can be!
+
+favColor: I think orange is pretty cute, so I'll go with that.
+
+favSeason:Definitely winter. I've always loved the holiday season, and it's when my daughter was born.
+
+favHangout:I spend a lot of time in the bar and lounge. You should join me more often.
+
+
+
+question1:Have you ever slept around while dating someone?
+q1answer1:Just once and it was the biggest mistake of my life.
+q1answer2:Yeah, I'm not exactly the best at commitment.
+q1answer3:Not a chance. I wouldn't dream of it.
+ifcorrect1:That's okay honey! It's not exactly my cup of tea either.
+ifwrong1:That's really how you feel? I see...
+
+question2:How would you feel about your partner seeing other people on the side?
+q2answer1:It depends how serious the relationship is.
+q2answer2:I think I'd be pretty upset about it.
+q2answer3:She can do whatever she wants. I don't own her.
+ifcorrect2:Yeah, it's not a big deal. It's just sex.
+ifwrong2:Really now? I didn't take you for one of those types.
+
+
+beforesheasks1:Okay, so, I've got a question for you...
+
+beforesheasks2:So, I'm dying to know something right now...
+
+beforesheasks3:Baby, I'm curious...
+
+beforeplayerasks1: You can ask me anything you like.
+
+
+
+
+
+bye1:Kisses!
+
+
+bye2:Sweet dreams...

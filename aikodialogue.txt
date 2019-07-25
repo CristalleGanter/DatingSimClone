@@ -1,0 +1,84 @@
+greeting1:Hey hot stuff.
+
+greeting2:Thank god, somebody I like. Well, somebody I can tolerate haha.
+
+greeting3:Oh!! Shhiiit... don't sneak up on me like that!
+
+
+
+lastName:My full name is Aiko Yumi. I know, I know. Could I be more Japanese?
+
+birthday:I'm sure you'll forget anyway, but, it's November 9th.
+
+height:Last time I checked I was five four.
+
+age:Why 21 of course. Nah, I'm fucking with you. I'm 28.
+
+occupation:You mean besides the university professor thing?
+
+education:I've got a master's degree in mathematics, and I regret it everyday.
+
+
+hobby:Sleeping... No, wait! Gambling.
+
+
+datereject:Maybe some other time. I got a lot of grading to do tonight.
+
+dateaccept:Sure! I suppose you've earned it.
+
+
+datefail:Don't beat yourself up over it. It's not the first shitty date I've had.
+
+datesuccess:Hey, that was actually really nice. Thank you.
+
+
+favColor: That's how you know you've got nothing to talk about. Ahhh... I like green.
+
+favSeason:If I had to pick I'd probably say autumn. I'm a sucker for all the colors!
+
+favHangout:Oh, shit. You can't keep me out of the casino!
+
+
+question1:What's your ideal, perfect vacation like?
+q1answer1:This is lame but I prefer to just stay home and relax.
+q1answer2:A cozy winter cottage or ski resort.
+q1answer3:A tropical island or beach resort.
+ifcorrect1:No, I'm with you. Who needs the stress of traveling?
+ifwrong1:Booooring
+
+question2:You a political person at all?
+q2answer1:I suppose I lean to the conservative side.
+q2answer2:Nah, that's all a bunch of nonsense to me.
+q2answer3:Most of my views are pretty liberal.
+ifcorrect2:You too? They all sound like a bunch of douchebags to me.
+ifwrong2:Pathetic...
+
+question3:So, honestly, how many chicks are you seeing right now?
+q3answer1:Baby, I only have eyes for you.
+q3answer2:You should see all the tail I'm chasing. It's crazy.
+q3answer3:There are a couple of girls I've met that I'm talking to.
+ifcorrect3:I respect your honesty. But they better not be cuter than me!
+ifwrong3:Yeah right!
+
+
+
+beforesheasks1:So, hey, question.
+
+beforesheasks2:Give me your honest answer.
+
+beforesheasks3:Let me ask you something.
+
+
+beforeplayerasks1:Mmmmmhmmmm?
+
+beforeplayerasks2:Something I can help you with?
+
+
+
+
+
+bye1:Yup, take care!
+
+bye2:Be a good girl out there.
+
+bye3:Try to keep those dreams about me under control, all right?

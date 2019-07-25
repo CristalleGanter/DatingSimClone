@@ -1,0 +1,14 @@
+beachscen:While the two of you are relaxing and soaking up the sun rays, a volley ball hits you in the face. The group who was playing seems apologetic. What do you do?
+beachscenop1:1. Accept their apology and toss the ball back to them.
+beachscenop2:2. Tell them to go screw themselves and toss the ball into the water.
+
+
+
+restscen:You're enjoying chatting with your date and drinking wine, when a waiter bumps into someone as he's passing your table and spills food all over you! What do you do?
+restscenop1:1. Laugh it off, it's no big deal.
+restscenop2:2. Scream at him and tell him he's not getting a tip.
+
+gardenscen:As you're walking through the garden with your date, a butterfly lands right on your nose. Suddenly, you feel like you really have to sneeze... What do you do?
+gardenscenop1:1. Try not to sneeze
+gardenscenop2:2. Just sneeze
+

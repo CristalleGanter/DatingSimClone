@@ -1,0 +1,73 @@
+greeting1:Sup playa?
+greeting2: Hey, girlfriend!
+greeting3:Let's get it goin'! These brauds aren't gonna date themselves.
+
+
+
+lastName: Don't laugh ok? it's... Sugardust.
+
+birthday:The world was given the honor of having me in it on August 3rd.
+
+
+
+age:In human years I think it's about... 384.
+
+occupation:I'm a love fairy. Remember?
+
+
+
+
+hobby:I like to go through your dirty magazines when you're not home.
+
+
+
+homeworld:It's a beautiful place called Sky Garden.
+
+
+dateaccept:Of course, let's get going!
+datereject:Maybe you should hit up those convo options first.
+datefail:That was pathetic.
+datesuccess:Alright, you did well, but only because I taught you!
+
+
+favColor:Really? Are you really going to ask me that? It's fucking pink, bitch!
+
+favSeason:Summer. I love being able to wear bikinis and shorts.
+
+favHangout:I hang out in your room when you're not home. You've got the best dirty magazines.
+
+question1:What did I say about approaching Audrey when you first ran into her?
+q1answer1:Say something really stupid to try and cheer her up.
+q1answer2:The nice girl shit wasn't going to cut it so I had to be aggressive.
+q1answer3:Take charge and don't let any of her bullshit get to me.
+ifcorrect1:Ha! Too easy. I'll getcha next time.
+ifwrong1:How don't you remember that?
+
+question2:When you first met Jessie, how did I suggest you approach her?
+q2answer1:To quickly say something to her before she had a chance to get away.
+q2answer2:The nice girl shit wasn't going to cut it so I had to be aggressive.
+q2answer3:Open up with something safe to try and get on her good side.
+ifcorrect2:Of course, how could you forget?
+ifwrong2:Ughh....
+
+question3:When first meeting Beli, what was my advise to you?
+q3answer1:That my weirdness might actually pay off so just be myself.
+q3answer2:Don't be afraid to take a chance but try not to scare her off.
+q3answer3:To quickly say something to her before she had a chance to get away.
+ifcorrect3:Nice. I expected nothing less.
+ifwrong3:You should have looked it up on the internet.
+
+
+
+beforesheasks1:Alright, let's see...
+
+
+
+
+beforeplayerasks1:What's good playa? Talk to me.
+
+
+
+
+bye1:Later girlfriend!
+bye2:Make me proud!

@@ -1,0 +1,29 @@
+
+beach:You arrive at the beach 5 minutes early. As you wait for your date, you lay out a towel and start sunbathing. After applying sunscree, of course. 
+restaurant:You enter the Vinnie's Steak House with your date. The decor, music, and overall atmosphere convey that this is a classy place. You hope the staff won't judge you for ordering the cheapest thing on the menu. And you hope your date doesn't order the most expensive thing on the menu.
+botanicalgarden:You arrive at the entrance to the botanical garden 5 minutes after your date was supposed to start. Not the best way to make a good impression. Yes, it was the fault of that idiot who was going 30 in a 45, but you're late nonetheless. Your date is waiting for you, and you try to look confident as you approach her.
+
+aikoswimsuit:Aiko is already in her swimsuit when she steps out of her car. She is wearing a silver one piece with tear drop shaped openings around the midriff.
+audreyswimsuit:Audrey is already in her swimsuit when she steps out of her car. She is wearing a white bikini with blue ruffles.
+beliswimsuit:Beli is already in her swimsuit when she steps out of her car. She is wearing a yellow bikini with brown ruffles on the sides of the bottom piece and the words "WITH LOVE" written in brown accross the top. You can tell she feels self-conscious in such a revealing outfit, but she definitely looks good.
+jessieswimsuit:Jessie is already in her swimsuit when she steps out of her car. She is wearing a purple string bikini that looks like it could slip off at any moment. Not that she would mind.
+kyannaswimsuit:Kyanna is already in her swimsuit when she steps out of her car. She is wearing a green bikini with skin tight swimming shorts. Even when she's just relaxing at the beach she looks athletic.
+tiffanyswimsuit:Tiffany is already in her swimsuit when she steps out of her car. She is wearing a pink bikini with a coral wrap tied around her waist.
+kyuswimsuit:Kyu strolls up to you at the beach. She's wearing a bikini made of leaves. You didn't quite have an expectation of what a fairy would wear for a bikini, but you still manage to be surprised by it. Of course, Kyu makes it look natural and chic.
+
+aikodress:Aiko is wearing a form fitting black dress with long, lace sleeves.
+audreydress:Audrey is wearing a bright red dress with as many ruffles and ribbons as possible.
+belidress:Beli is wearing her purple and red sari.
+jessiedress:Jessie is wearing a skin tight black dress with a deep cut V neck.
+kyannadress:Kyanna is wearing a blue, off the shoulder cocktail dress.
+tiffanydress:Tiffany is wearing a milky pink cocktail dress with lace around the top and flowing, chiffon skirt.
+kyudress:Kyu is wearing a dress that looks like it's made of sparkling pink and blue petals and a flower crown in her hair. Apparently she can use magic to hide her wings, but she still stands out like a sore thumb among humans.
+
+aikocasual:Aiko is wearing a red turtelneck and a short black pencil skirt.
+audreycasual:Audrey is wearing a white and blue lacy dress.
+belicasual:Beli is wearing a flowing orange dress with sandals.
+jessiecasual:Jessie is wearing a leopard print top with jean shorts.
+kyannacasual:Kyanna is wearing a blue striped tank top with jean shorts.
+tiffanycasual:Tiffany is wearing a blue plaid top with jean shorts and grey boots.
+kyucasual:Kyu is wearing her typical getup. Pink panties, heels, and a pink tube top with bows. She almost looks like she belongs among all the butterflies.
+

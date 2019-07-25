@@ -1,0 +1,83 @@
+greeting1:Hey, dude! What's up?
+
+greeting2: Good morning! Ready to get to work?
+
+greeting3:Glad you're here! I need a work out buddy.
+
+
+
+
+
+lastName:That's okay! My last name is Delrio.
+
+birthday:March 16th! Mark it down.
+
+
+
+age:Oh, yeah, that would be good to know, huh? I'm twenty-one.
+
+
+occupation: I work part-time as a hairdresser in the salon at the mall.
+
+
+education:I finished high school, but I didn't get a chance to go to college after having my son.
+
+
+
+hobby:Definitely working out. I never miss a day!
+
+
+dateaccept:I'd love to! Let's make it happen.
+datereject:I'd love to, but I don't have a baby sitter for tonight. Sorry.
+
+datesuccess:We should def do that again, like, super soon!
+datefail:I think I deserve a little better than that, don't you?
+
+favColor:It's not a lame question! I like blue.
+
+
+
+favHangout:Oh, you can't keep me out of the gym!
+
+question1:Are you good with money?
+q1answer1:I assure you that I would be if only I had any.
+q1answer2:I would say so. I've always been good at saving up for important things.
+q1answer3:I'm terrible with money. There's just too much cool shit out there to buy.
+ifcorrect1:I wish I could be more like that. I need to start saving for my future, seriously.
+ifwrong1:Oh...
+
+
+question2:Do you get up early in the morning or stay up really late at night?
+q2answer1:I'm usually up all hours of the night.
+q2answer2:Neither really. I just take short naps throughout the day.
+q2answer3:Bright and early! Things to do, people to see.
+ifcorrect2:That sounds just like me! I get up and head right to the gym.
+ifwrong2:Whatever floats your boat, man.
+
+question3:Do you prefer stability or spontaneity in your life?
+q3answer1:Spontaneity, without a doubt. Life should be a never ending adventure!
+q3answer2:I prefer stability. It's important to have an anchor down somewhere in life.
+q3answer3:I think a little bit of both can be a good thing. Balance is important.
+ifcorrect3:So important! I used to party a lot but ever since I had my son I had to grow up and settle down a bit.
+ifwrong3: Haha! Get the fuck out of here with that shit!
+
+
+
+beforeplayerasks1:Go ahead, ask me anything!
+
+beforeplayerasks2:Yeah?
+
+beforeplayerasks3:Did you wanna say something?
+
+
+beforesheasks1:I'm just curious...
+
+beforesheasks2:Soo... I've been wondering...
+
+beforesheasks3:Hey, question for ya!
+
+
+
+bye1:Take it easy!
+bye2:Knock 'em dead out there!
+bye3:Deuces!

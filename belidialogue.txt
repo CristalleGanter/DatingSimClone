@@ -1,0 +1,74 @@
+greeting1:Enjoying the great weather today?
+
+greeting2:Hey! I'm glad I ran into you.
+
+greeting3:Hello again. How's your day going?
+
+
+
+lastName: I was wondering about that. My last name is Lapran.
+
+
+
+occupation:I teach yoga classes at the gym. You should come! Don't worry, we don't make the beginners do the hard moves, haha.
+
+education: I started in law, but I lost interest. I only came out with a two year degree.
+
+
+
+
+
+dateaccept:Oh, are you sure? Yes, of course I'll go.
+datereject:I'm sorry, I'm really tired from teaching my yoga class earlier. Perhaps some other time.
+
+datefail:Is there something wrong? Do you not like spending time with me?
+
+datesuccess:I had a nice time. Thank you.
+
+favColor:Purple! It's the color of my favorite flower. The lilac.
+
+favSeason:I'd have to say Autumn.
+
+favHangout:I love going to the park in the mornings. It's so peaceful and relaxing.
+
+question1:What's your favorite thing about yourself?
+q1answer1:I like that I'm open minded and always learning.
+q1answer2:I think my sense of humor is pretty damn funny.
+q1answer3:My devilishly beautiful good looks.
+ifcorrect1:Wow! I've never heard an answer like that before. I like it!
+ifwrong1:I see.
+
+question2:What are your feelings about true love?
+q2answer1:I think love exists, but it has to be built between two people over time.
+q2answer2:I'm not convinced that love actually exists, it's just an abstract concept.
+q2answer3:I believe there is one special person out there for everyone.
+ifcorrect2:Awww, you too? It seems like today's world has given up hope on true love.
+ifwrong2:Hmmm, I don't think I've ever looked at it that way.
+
+
+question3:Are you happy with your body?
+q3answer1:God no. I try to avoid going in rooms with mirrors.
+q3answer2:I could stand to lose a few pounds.
+q3answer3:What's not to be happy with?
+ifcorrect3:That's an interesting way to think about it... Very refreshing.
+ifwrong3:Hmmmm...
+
+
+beforesheasks1:I've been wondering about something lately...
+
+beforesheasks2:Would you mind if I asked you something? I'm curious.
+
+beforesheasks3:I'm interested in knowing what you think about this...
+
+
+beforeplayerasks1:What can I do for you?
+
+
+
+
+
+bye1:Have a great day!
+
+bye2:I hope to see you soon!
+
+bye3:Until next time!

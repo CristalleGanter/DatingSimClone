@@ -1,0 +1,82 @@
+greeting1:Hiya!
+
+greeting2:Oh, hi! How's it going?
+
+greeting3:Hey you!
+
+
+
+
+lastName:It's cool. My last name is Maye. Tiffany Maye!
+
+
+
+
+
+height:I wish I was taller! I'm only five foot four.
+
+
+age:Me? I'm twenty years old. Mhm!
+
+
+
+
+hobby:I really enjoy cheerleading. I've never missed a practice.
+
+
+dateaccept:Sounds like fun!
+datereject:I have to study for a test tomorrow.
+
+datefail:Yeah, I gotta go.
+datesuccess:That was awesome! Thanks for taking me out.
+
+favColor:Pink all day. Not hot pink. I prefer like a milky pink.
+
+favSeason:Umm... I kinda like all the seasons. If I had to pick one, probably summer.
+
+favHangout:I know it's boring, but I kinda just like to hang around campus.
+
+question1:Do you still talk with any of your ex's?
+q1answer1:God no. Those sluts can get bent.
+q1answer2:Well that would require having had a girlfriend.
+q1answer3:Yeah I keep in touch with some of them.
+ifcorrect1:That's really cool! It's nice when you can still be friends.
+ifwrong1:You jerk!
+
+question2:Would you date an unattractive girl if you really liked her as a person?
+q2answer1:I don't know. How ugly we talking?
+q2answer2:Probably not. I need to be attracted to my partner.
+q2answer3:Of course. Looks aren't everything you know.
+ifcorrect2:Honestly, me too. Oh no, are we terrible people?
+ifwrong2:Pssssh! You're such a liar!
+
+question3:Have you slept with a lot of girls? Wait, don't tell me... No! Wait! Yes, tell me.
+q3answer1:You know... I mean, a couple.
+q3answer2:I've literally never slept with anyone.
+q3answer3:I lost count around forty.
+ifcorrect3:Shut up! You're such a dork.
+ifwrong3:I'm not so sure about that.
+
+
+
+
+beforesheasks1:Hey! Question.
+
+beforesheasks2:So I've been curious what you think about this...
+
+beforesheasks3:I wanna ask you somethin'...
+
+
+beforeplayerasks1:Somethin' on your mind?
+
+beforeplayerasks2:What do you wanna know about me?
+
+beforeplayerasks3:What's shakin' bacon?
+
+
+
+bye1:Toods!
+
+bye2:Catch ya later!
+
+bye3:Yeah, I should really be leaving too. See ya!

@@ -1,0 +1,14 @@
+asklastname:Forgive me, I haven't even asked your last name yet.
+askbirthday:So I won't forget it; when is your birthday?
+askage:So, exactly how old are you?
+askheight:So, how tall are you?
+askweight:How much do you weigh? If you don't mind my asking.
+askoccupation:What do you do for a living?
+askeducation:What did you study in college?
+askhobby:What is your main hobby?
+askfavcolor:Lame question, but what's your favorite color?
+askfavseason:Do you like one season more than the others?
+askfavhangout:Where do you like to hang out?
+
+seccharasklastnamespec:What's your last name? Do you even have one?
+seccharaskhomeworld:Where are you from, exactly?
