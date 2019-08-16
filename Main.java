@@ -15,108 +15,126 @@ public class Main {
     public static void main(String[] args) {
 
 
+        Convo talking = new Convo();
+
+        Scanner scan = new Scanner(System.in);
+
+
+        DialogueLoader loadDialogue = new DialogueLoader();
+
+        CharacterMaker makeCharacter = new CharacterMaker();
+
+        makeCharacter.loadCharacter();
+
+        Date date1 = new Date("beach:");
+        Date date2 = new Date("restaurant:");
+        Date date3 = new Date("botanicalgarden:");
+
+
+        Scenario scenario = new Scenario("beach");
+
+
+        System.out.println("\nWhich girl would you like to talk to?" +
+                "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
+
+
+        String convochoice = scan.nextLine();
+
+
+        boolean exit = false;
+
+        //  outer:  while (exit==false) {
 
 
 
-Convo talking = new Convo();
 
-Scanner scan = new Scanner(System.in);
+        do
+        {
+            switch (convochoice) {
+
+                case "aiko":
+                    talking.introduceaiko();
+                    String aikoconvo = scan.nextLine();
+                    talking.talkaiko(aikoconvo);
+                    System.out.println("\nWhich girl would you like to talk to?" +
+                            "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
+                    System.out.println("\n");
+                    convochoice=scan.nextLine();
+                    break;
+                case "audrey":
+
+                    talking.introduceaudrey();
+
+                    String audreyconvo = scan.nextLine();
+
+                    talking.talkaudrey(audreyconvo);
+                    System.out.println("\nWhich girl would you like to talk to?" +
+                            "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
+                    System.out.println("\n");
+                    convochoice=scan.nextLine();
+                    break;
+
+                case "beli":
+                    talking.introducebeli();
+
+                    String beliconvo = scan.nextLine();
+                    talking.talkbeli(beliconvo);
+                    System.out.println("\nWhich girl would you like to talk to?" +
+                            "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
+                    System.out.println("\n");
+                    convochoice=scan.nextLine();
+                    break;
+
+                case "jessie":
+                    talking.introducjessie();
+
+                    String jessieconvo = scan.nextLine();
+                    talking.talkjessie(jessieconvo);
+                    System.out.println("\nWhich girl would you like to talk to?" +
+                            "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
+                    System.out.println("\n");
+                    convochoice=scan.nextLine();
+                    break;
+
+                case "kyanna":
+                    talking.introducekyanna();
+
+                    String kyannaconvo = scan.nextLine();
+                    talking.talkkyanna(kyannaconvo);
+                    System.out.println("\nWhich girl would you like to talk to?" +
+                            "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
+                    System.out.println("\n");
+                    convochoice=scan.nextLine();
+                    break;
+
+                case "tiffany":
+                    talking.introducetiffany();
+                    String tiffanyconvo = scan.nextLine();
+                    talking.talktiffany(tiffanyconvo);
+                    System.out.println("\nWhich girl would you like to talk to?" +
+                            "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
+                    System.out.println("\n");
+                    convochoice=scan.nextLine();
+                    break;
+
+                case "exit":
+                    exit = true;
+                    break;
 
 
+                default:
+                    System.out.println("Please enter the lowercase name of a girl.");
+                    exit = true;
+                    break;
+                // find way to loop back to beginning after breaking case
+            }
 
 
+        }
+while(exit==false);
 
-DialogueLoader loadDialogue= new DialogueLoader();
-
-CharacterMaker makeCharacter= new CharacterMaker();
-
-makeCharacter.loadCharacter();
-
-Date date1= new Date("beach:");
-        Date date2= new Date("restaurant:");
-        Date date3= new Date("botanicalgarden:");
-
-
-Scenario scenario= new Scenario("beach");
-
-
-
-
-
-
-   System.out.println("\nWhich girl would you like to talk to?" +
-           "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
-
-
-
-String convochoice=scan.nextLine();
-
-
-        boolean exit=false;
-
-      outer:  while (exit==false) {
-
-          inner:  switch (convochoice) {
-
-        case "aiko":
-            talking.introduceaiko();
-            String aikoconvo=scan.nextLine();
-            talking.talkaiko(aikoconvo);
-
-            break;
-        case "audrey":
-
-            talking.introduceaudrey();
-
-            String audreyconvo = scan.nextLine();
-
-            talking.talkaudrey(audreyconvo);
-            break;
-
-        case "beli":
-            talking.introducebeli();
-
-
-            String beliconvo = scan.nextLine();
-            talking.talkbeli(beliconvo);
-            break;
-
-        case "jessie":
-            talking.introducjessie();
-
-            String jessieconvo = scan.nextLine();
-            talking.talkjessie(jessieconvo);
-
-            break;
-
-        case "kyanna":
-            talking.introducekyanna();
-
-            String kyannaconvo = scan.nextLine();
-            talking.talkkyanna(kyannaconvo);
-            break;
-
-        case "tiffany":
-            talking.introducetiffany();
-            String tiffanyconvo = scan.nextLine();
-            talking.talktiffany(tiffanyconvo);
-            break;
-
-        case "exit":
-            exit=true;
-            System.exit(1);
-
-        default:
-            System.out.println("Please enter the lowercase name of a girl.");
-           // break causes infinite loop
-
-            System.exit(1);
+        //}
     }
-
-
-
-}
-
 
 
 
@@ -165,21 +183,5 @@ String convochoice=scan.nextLine();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
-}
+
