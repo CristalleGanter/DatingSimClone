@@ -1,21 +1,41 @@
 package com.company;
 
-
+import java.util.Scanner;
 
 
 public class Convo extends Main{
 
 
-
+Scanner read = new Scanner(System.in);
 
 
     DialogueLoader loadDialogue= new DialogueLoader();
 
-    CharacterMaker makeCharacter= new CharacterMaker();
+
 
 
 
 //several methods for different aspects of convo?
+
+
+    public void aikoq1(String answer)
+    {
+
+
+      if (answer.equals("1"))
+      {
+          System.out.print(loadDialogue.getdiag("aikodialogue.txt", "ifcorrect1:"));
+      }
+      else
+      {
+
+          System.out.print(loadDialogue.getdiag("aikodialogue.txt", "ifwrong1:"));
+          System.out.println("\n");
+      }
+
+    }
+
+
 
 
     public void introduceaiko() {
@@ -36,11 +56,20 @@ public void talkaiko(String convochoice) {
 
     switch (convochoice)
     {
-        case "1": System.out.println(loadDialogue.getdiag("aikodialogue.txt", "greeting2:"));
+        case "1":
+            System.out.println(loadDialogue.getdiag("aikodialogue.txt","question1:"));
+            System.out.println("1. "+ loadDialogue.getdiag("aikodialogue.txt","q1answer1:"));
+            System.out.println("2. "+loadDialogue.getdiag("aikodialogue.txt","q1answer2:"));
+            System.out.println("3. "+loadDialogue.getdiag("aikodialogue.txt","q1answer3:"));
 
-        case "2":  System.out.println(loadDialogue.getdiag("aikodialogue.txt", "beforeplayerasks2:"));
+          String  answer=read.nextLine();
+           aikoq1(answer);
+            break;
 
-        case "3":
+        case "2":System.out.println(loadDialogue.getdiag("aikodialogue.txt", "beforeplayerasks2:"));
+        break;
+
+        case "3":System.out.println(loadDialogue.getdiag("aikodialogue.txt", "datereject:"));
 
         case "4": break;
 
@@ -65,18 +94,25 @@ public void talkaiko(String convochoice) {
 
 
    public void talkaudrey (String convochoice) {
-      // makeCharacter.loadCharacter();
+
 
 
 switch (convochoice)
        {
-           case "1": System.out.println(loadDialogue.getdiag("audreydialogue.txt", "greeting2:"));
+           case "1": System.out.println(loadDialogue.getdiag("audreydialogue.txt","question1:"));
+               System.out.println("1. "+ loadDialogue.getdiag("audreydialogue.txt","q1answer1:"));
+               System.out.println("2. "+loadDialogue.getdiag("audreydialogue.txt","q1answer2:"));
+               System.out.println("3. "+loadDialogue.getdiag("audreydialogue.txt","q1answer3:"));
+
+               break;
 
            case "2":System.out.println(loadDialogue.getdiag("audreydialogue.txt", "beforeplayerasks2:"));
+           break;
 
-           case "3":
+           case "3":System.out.println(loadDialogue.getdiag("audreydialogue.txt", "datereject:"));
+           break;
 
-           case "4":
+           case "4": break;
 
        }
 
@@ -106,12 +142,15 @@ switch (convochoice)
         switch (convochoice)
         {
             case "1": System.out.println(loadDialogue.getdiag("belidialogue.txt", "greeting2:"));
+            break;
 
             case "2":System.out.println(loadDialogue.getdiag("belidialogue.txt", "beforeplayerasks2:"));
+            break;
 
-            case "3":
+            case "3":System.out.println(loadDialogue.getdiag("belidialogue.txt", "datereject:"));
+            break;
 
-            case "4":
+            case "4": break;
 
         }
     }
@@ -139,12 +178,16 @@ switch (convochoice)
         switch (convochoice)
         {
             case "1": System.out.println(loadDialogue.getdiag("jessiedialogue.txt", "greeting2:"));
+                break;
 
             case "2":System.out.println(loadDialogue.getdiag("jessiedialogue.txt", "beforeplayerasks2:"));
+                break;
 
-            case "3":
+            case "3":System.out.println(loadDialogue.getdiag("jessiedialogue.txt", "datereject:"));
+                break;
 
             case "4":
+                break;
 
         }
     }
@@ -175,12 +218,16 @@ switch (convochoice)
         switch (convochoice)
         {
             case "1": System.out.println(loadDialogue.getdiag("kyannadialogue.txt", "greeting2:"));
+                break;
 
             case "2":System.out.println(loadDialogue.getdiag("kyannadialogue.txt", "beforeplayerasks2:"));
+                break;
 
-            case "3":
+            case "3":System.out.println(loadDialogue.getdiag("kyannadialogue.txt", "datereject:"));
+                break;
 
             case "4":
+                break;
 
         }
     }
@@ -208,12 +255,16 @@ switch (convochoice)
         switch (convochoice)
         {
             case "1": System.out.println(loadDialogue.getdiag("tiffanydialogue.txt", "greeting2:"));
+                break;
 
             case "2":System.out.println(loadDialogue.getdiag("tiffanydialogue.txt", "beforeplayerasks2:"));
+                break;
 
-            case "3":
+            case "3":System.out.println(loadDialogue.getdiag("tiffanydialogue.txt", "datereject:"));
+                break;
 
             case "4":
+                break;
 
         }
     }

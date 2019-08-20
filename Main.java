@@ -56,6 +56,7 @@ public class Main {
                     talking.introduceaiko();
                     String aikoconvo = scan.nextLine();
                     talking.talkaiko(aikoconvo);
+
                     System.out.println("\nWhich girl would you like to talk to?" +
                             "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
                     System.out.println("\n");
@@ -124,7 +125,10 @@ public class Main {
 
                 default:
                     System.out.println("Please enter the lowercase name of a girl.");
-                    exit = true;
+                    System.out.println("\nWhich girl would you like to talk to?" +
+                            "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
+                    System.out.println("\n");
+                    convochoice=scan.nextLine();
                     break;
                 // find way to loop back to beginning after breaking case
             }
@@ -133,7 +137,7 @@ public class Main {
         }
 while(exit==false);
 
-        //}
+     
     }
 
 
@@ -144,38 +148,6 @@ while(exit==false);
 
 
 
-/*
-
-
-        while (!exit) {
-
-            try {
-                String choice = scan.nextLine();
-
-                switch (choice) {
-
-                    case "aiko":
-                        loadDialogue.alldiag("aikodialogue.txt", "greeting1:");
-
-
-
-
-
-
-
-            }
-    catch(java.util.InputMismatchException e)
-                {
-                    System.out.println("Please enter the correct input.");
-                    scan.next();
-
-
-                }
-
-
-        }
-
-*/
 
 
 //decorator pattern
