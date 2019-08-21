@@ -35,7 +35,7 @@ public class Main {
 
 
         System.out.println("\nWhich girl would you like to talk to?" +
-                "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
+                "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Kyu \n Exit\n");
 
 
         String convochoice = scan.nextLine();
@@ -43,7 +43,6 @@ public class Main {
 
         boolean exit = false;
 
-        //  outer:  while (exit==false) {
 
 
 
@@ -118,6 +117,17 @@ public class Main {
                     convochoice=scan.nextLine();
                     break;
 
+                case "kyu":
+
+                    talking.introducekyu();
+                    String kyuconvo = scan.nextLine();
+                    talking.talkkyu(kyuconvo);
+                    System.out.println("\nWhich girl would you like to talk to?" +
+                            "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
+                    System.out.println("\n");
+                    convochoice=scan.nextLine();
+                    break;
+
                 case "exit":
                     exit = true;
                     break;
@@ -130,14 +140,14 @@ public class Main {
                     System.out.println("\n");
                     convochoice=scan.nextLine();
                     break;
-                // find way to loop back to beginning after breaking case
+
             }
 
 
         }
 while(exit==false);
 
-     
+
     }
 
 

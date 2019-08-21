@@ -21,6 +21,16 @@ public class CharacterMaker {
         return null;
     }
 
+
+    public Character getSecretCharacter(String characterName) {
+        for (Character someCharacter : this.secretCharacters) {
+            if (someCharacter.name.equals(characterName)) {
+                return someCharacter;
+            }
+        }
+        return null;
+    }
+
     // Character character = new Character("Aiko", "Yumi", "black",
     //  "grey", "D", 5, 4, 109, 28);
     // character.extraProperties("mint green", "gambling", "autumn","casino", "November 9th");
@@ -78,14 +88,13 @@ public class CharacterMaker {
 
 
 
-
-
         characters.add(Aiko);
         characters.add(Audrey);
         characters.add(Beli);
         characters.add(Jessie);
         characters.add(Kyanna);
         characters.add(Tiffany);
+
 
 
 
@@ -104,15 +113,25 @@ public void loadSecretCharacter()
             "August 3rd", "love fairy", "fairy school");
 
 
+    SecretCharacter Celeste= new SecretCharacter("alien", "Tendricide", "Celeste", "Luvendass", "white", "orange", 5, 9, 32, false);
+    Celeste.extraProperties("silver", "swimming", "winter", "beach",
+            "July 20th", "bounty hunter", "trade school");
 
+    SecretCharacter Momo = new SecretCharacter("cat girl", "unknown", "Momo", "N/A", "auburn", "gold", 5, 2, 1, false);
+    Momo.extraProperties("gold", "taking naps", "spring", "hiking trail",
+            "October 2nd", "kitty", "none");
+
+    SecretCharacter Venus = new SecretCharacter("goddess", "Sky Garden", "Theiatana", "Venus", "green", "green", 5, 8, 10000, false);
+    Venus.extraProperties("white", "relaxing", "autumn", "hot spring",
+            "September 1st", "love goddess", "fairy school");
 
 
 
 
     secretCharacters.add(Kyu);
-
-
-
+    secretCharacters.add(Celeste);
+    secretCharacters.add(Momo);
+    secretCharacters.add(Venus);
 
 
 }

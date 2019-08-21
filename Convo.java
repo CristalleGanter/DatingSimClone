@@ -11,7 +11,7 @@ Scanner read = new Scanner(System.in);
 
     DialogueLoader loadDialogue= new DialogueLoader();
 
-
+CharacterMaker makeCharacter= new CharacterMaker();
 
 
 
@@ -52,7 +52,7 @@ Scanner read = new Scanner(System.in);
 
 public void talkaiko(String convochoice) {
 
-
+    makeCharacter.loadCharacter();
 
     switch (convochoice)
     {
@@ -66,10 +66,21 @@ public void talkaiko(String convochoice) {
            aikoq1(answer);
             break;
 
-        case "2":System.out.println(loadDialogue.getdiag("aikodialogue.txt", "beforeplayerasks2:"));
+        case "2":
+
+
+              System.out.println(loadDialogue.getdiag("aikodialogue.txt", "beforeplayerasks2:"));
+
         break;
 
-        case "3":System.out.println(loadDialogue.getdiag("aikodialogue.txt", "datereject:"));
+        case "3":
+            if (  makeCharacter.getCharacter("Aiko").getisFriend()==true)
+            {
+System.out.println(loadDialogue.getdiag("aikodialogue.txt","dateaccept:"));
+            }
+            else {
+                System.out.println(loadDialogue.getdiag("aikodialogue.txt", "datereject:"));
+            }
 
         case "4": break;
 
@@ -95,7 +106,7 @@ public void talkaiko(String convochoice) {
 
    public void talkaudrey (String convochoice) {
 
-
+       makeCharacter.loadCharacter();
 
 switch (convochoice)
        {
@@ -109,7 +120,9 @@ switch (convochoice)
            case "2":System.out.println(loadDialogue.getdiag("audreydialogue.txt", "beforeplayerasks2:"));
            break;
 
-           case "3":System.out.println(loadDialogue.getdiag("audreydialogue.txt", "datereject:"));
+           case "3":
+
+               System.out.println(loadDialogue.getdiag("audreydialogue.txt", "datereject:"));
            break;
 
            case "4": break;
@@ -138,7 +151,7 @@ switch (convochoice)
 
     public void talkbeli(String convochoice)
     {
-
+        makeCharacter.loadCharacter();
         switch (convochoice)
         {
             case "1": System.out.println(loadDialogue.getdiag("belidialogue.txt", "greeting2:"));
@@ -174,7 +187,7 @@ switch (convochoice)
 
     public void talkjessie(String convochoice)
     {
-
+        makeCharacter.loadCharacter();
         switch (convochoice)
         {
             case "1": System.out.println(loadDialogue.getdiag("jessiedialogue.txt", "greeting2:"));
@@ -214,7 +227,7 @@ switch (convochoice)
 
     public void talkkyanna(String convochoice)
     {
-
+        makeCharacter.loadCharacter();
         switch (convochoice)
         {
             case "1": System.out.println(loadDialogue.getdiag("kyannadialogue.txt", "greeting2:"));
@@ -251,7 +264,7 @@ switch (convochoice)
 
     public void talktiffany(String convochoice)
     {
-
+        makeCharacter.loadCharacter();
         switch (convochoice)
         {
             case "1": System.out.println(loadDialogue.getdiag("tiffanydialogue.txt", "greeting2:"));
@@ -268,6 +281,118 @@ switch (convochoice)
 
         }
     }
+
+
+
+
+    public void introducekyu()
+    {
+        loadDialogue.alldiag("kyudialogue.txt", "greeting1:");
+        System.out.println("\n");
+
+
+        System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date \n4. Talk to another girl\n");
+
+
+    }
+
+
+
+    public void kyuq1(String answer)
+    {
+
+
+        if (answer.equals("2"))
+        {
+            System.out.print(loadDialogue.getdiag("kyudialogue.txt", "ifcorrect1:"));
+        }
+        else
+        {
+
+            System.out.print(loadDialogue.getdiag("kyudialogue.txt", "ifwrong1:"));
+            System.out.println("\n");
+        }
+
+    }
+
+
+
+    public void talkkyu(String convochoice)
+    {
+        makeCharacter.loadSecretCharacter();
+        switch (convochoice)
+        {
+            case "1": System.out.println(loadDialogue.getdiag("kyudialogue.txt","question1:"));
+                System.out.println("1. "+ loadDialogue.getdiag("kyudialogue.txt","q1answer1:"));
+                System.out.println("2. "+loadDialogue.getdiag("kyudialogue.txt","q1answer2:"));
+                System.out.println("3. "+loadDialogue.getdiag("kyudialogue.txt","q1answer3:"));
+
+                String  answer=read.nextLine();
+                kyuq1(answer);
+                break;
+
+            case "2":System.out.println(loadDialogue.getdiag("kyudialogue.txt", "beforeplayerasks2:"));
+                break;
+
+            case "3":
+                if (  makeCharacter.getSecretCharacter("Kyu").getisFriend() )
+            {
+                System.out.println(loadDialogue.getdiag("kyudialogue.txt","dateaccept:"));
+            }
+            else {
+                System.out.println(loadDialogue.getdiag("kyudialogue.txt", "datereject:"));
+            }
+                break;
+
+            case "4":
+                break;
+
+        }
+    }
+
+
+
+
+
+
+
+    
+    public void talkceleste(String convochoice)
+    {
+        makeCharacter.loadSecretCharacter();
+        switch (convochoice)
+        {
+            case "1":
+                break;
+
+            case "2":
+                break;
+
+            case "3":
+
+
+                break;
+
+            case "4":
+                break;
+
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
        /*

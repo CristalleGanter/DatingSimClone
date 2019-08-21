@@ -49,16 +49,7 @@ public void startScenario(String keyWord)
 
 // beach, restaurant, botanical garden
 
-    // beach scenario 1
 
-
-
-    //restaurant scenario 1
-
-
-
-
-    //botanical garden scenario 1
 
 
 
