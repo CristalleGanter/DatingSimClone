@@ -1,7 +1,7 @@
 package com.company;
 
 import java.util.Scanner;
-
+import java.util.Random;
 
 public class Convo extends Main{
 
@@ -15,7 +15,67 @@ CharacterMaker makeCharacter= new CharacterMaker();
 
 
 
-//several methods for different aspects of convo?
+
+
+
+    Random random = new Random();
+
+
+  //  int randomnumber = random.nextInt(8);
+  //  int randomnumber2 = randomnumber+1;
+   // int randomnumber3 = randomnumber+2;
+
+    public void makerandomnumber(int randomnumber, int randomnumber2, int randomnumber3) {
+
+
+       // super(randomnumber, randomnumber2, randomnumber3);
+
+    }
+
+
+    public void answerquestion(int questionnumber, String filename)
+    {
+        switch(questionnumber)
+        {
+            case 0: System.out.println(loadDialogue.getdiag(filename,"lastName:"));
+                break;
+            case 1: System.out.println(loadDialogue.getdiag(filename,"birthday:"));
+                break;
+            case 2:  System.out.println(loadDialogue.getdiag(filename,"age:"));
+                break;
+            case 3: System.out.println(loadDialogue.getdiag(filename,"height:"));
+                break;
+            case 4: System.out.println(loadDialogue.getdiag(filename,"weight:"));
+                break;
+            case 5: System.out.println(loadDialogue.getdiag(filename,"occupation:"));
+                break;
+            case 6: System.out.println(loadDialogue.getdiag(filename,"education:"));
+                break;
+            case 7:  System.out.println(loadDialogue.getdiag(filename,"hobby:"));
+                break;
+            case 8: System.out.println(loadDialogue.getdiag(filename,"favColor:"));
+                break;
+            case 9:  System.out.println(loadDialogue.getdiag(filename,"favSeason:"));
+                break;
+            case 10:  System.out.println(loadDialogue.getdiag(filename ,"favHangout:"));
+                break;
+        }
+
+    }
+
+
+    public void introduceaiko() {
+
+        loadDialogue.alldiag("aikodialogue.txt", "greeting1:");
+        System.out.println("\n");
+
+
+        System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date \n4. Talk to another girl\n");
+
+
+    }
+
+
 
 
     public void aikoq1(String answer)
@@ -38,114 +98,160 @@ CharacterMaker makeCharacter= new CharacterMaker();
 
 
 
-    public void introduceaiko() {
 
-        loadDialogue.alldiag("aikodialogue.txt", "greeting1:");
-        System.out.println("\n");
+    public void talkaiko(String convochoice) {
 
+        makeCharacter.loadCharacter();
 
-        System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date \n4. Talk to another girl\n");
+        switch (convochoice)
+        {
+            case "1":
+                System.out.println(loadDialogue.getdiag("aikodialogue.txt","question1:"));
+                System.out.println("1. "+ loadDialogue.getdiag("aikodialogue.txt","q1answer1:"));
+                System.out.println("2. "+loadDialogue.getdiag("aikodialogue.txt","q1answer2:"));
+                System.out.println("3. "+loadDialogue.getdiag("aikodialogue.txt","q1answer3:"));
 
+                String  answer=read.nextLine();
+                aikoq1(answer);
+                break;
 
-    }
+            case "2":
 
-
-public void talkaiko(String convochoice) {
-
-    makeCharacter.loadCharacter();
-
-    switch (convochoice)
-    {
-        case "1":
-            System.out.println(loadDialogue.getdiag("aikodialogue.txt","question1:"));
-            System.out.println("1. "+ loadDialogue.getdiag("aikodialogue.txt","q1answer1:"));
-            System.out.println("2. "+loadDialogue.getdiag("aikodialogue.txt","q1answer2:"));
-            System.out.println("3. "+loadDialogue.getdiag("aikodialogue.txt","q1answer3:"));
-
-          String  answer=read.nextLine();
-           aikoq1(answer);
+//get random numbers to initiate in main loop
+                int testrandomnumber = random.nextInt(8);
+                int testrandomnumber2 = testrandomnumber+1;
+                int testrandomnumber3 = testrandomnumber+2;
+                  System.out.println(loadDialogue.getdiag("aikodialogue.txt", "beforeplayerasks2:")+"\n");
+                  System.out.print("1. ");askquestion(testrandomnumber);
+                  System.out.println();
+                  System.out.print("2. ");askquestion(testrandomnumber2);
+                  System.out.println();
+                  System.out.print("3. ");askquestion(testrandomnumber3);
+                  String choosequestion = read.nextLine();
+                  switch(choosequestion) {
+                      case "1": answerquestion(testrandomnumber, "aikodialogue.txt");
+                      break;
+                      case "2": answerquestion(testrandomnumber2, "aikodialogue.txt");
+                      break;
+                      case "3": answerquestion(testrandomnumber3, "aikodialogue.txt");
+                      break;
+                  }
             break;
 
-        case "2":
+            case "3":
+                if (  makeCharacter.getCharacter("Aiko").getisFriend())
+                {
+                    System.out.println(loadDialogue.getdiag("aikodialogue.txt","dateaccept:"));
+                }
+                else {
+                    System.out.println(loadDialogue.getdiag("aikodialogue.txt", "datereject:"));
+                }
 
+            case "4": break;
 
-              System.out.println(loadDialogue.getdiag("aikodialogue.txt", "beforeplayerasks2:"));
-
-        break;
-
-        case "3":
-            if (  makeCharacter.getCharacter("Aiko").getisFriend()==true)
-            {
-System.out.println(loadDialogue.getdiag("aikodialogue.txt","dateaccept:"));
-            }
-            else {
-                System.out.println(loadDialogue.getdiag("aikodialogue.txt", "datereject:"));
-            }
-
-        case "4": break;
+        }
 
     }
-
-
-    }
-
-
-
 
     public void introduceaudrey() {
 
         loadDialogue.alldiag("audreydialogue.txt", "greeting1:");
         System.out.println("\n");
-
-
         System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date \n4. Talk to another girl\n");
 
+    }
+
+
+    public void audreyq1(String answer)
+    {
+
+
+        if (answer.equals("2"))
+        {
+            System.out.print(loadDialogue.getdiag("audreydialogue.txt", "ifcorrect1:"));
+        }
+        else
+        {
+
+            System.out.print(loadDialogue.getdiag("audreydialogue.txt", "ifwrong1:"));
+            System.out.println("\n");
+        }
 
     }
+
 
 
    public void talkaudrey (String convochoice) {
 
        makeCharacter.loadCharacter();
 
-switch (convochoice)
-       {
-           case "1": System.out.println(loadDialogue.getdiag("audreydialogue.txt","question1:"));
-               System.out.println("1. "+ loadDialogue.getdiag("audreydialogue.txt","q1answer1:"));
-               System.out.println("2. "+loadDialogue.getdiag("audreydialogue.txt","q1answer2:"));
-               System.out.println("3. "+loadDialogue.getdiag("audreydialogue.txt","q1answer3:"));
+        switch (convochoice)
+        {
+            case "1": System.out.println(loadDialogue.getdiag("audreydialogue.txt","question1:"));
+                System.out.println("1. "+ loadDialogue.getdiag("audreydialogue.txt","q1answer1:"));
+                System.out.println("2. "+loadDialogue.getdiag("audreydialogue.txt","q1answer2:"));
+                System.out.println("3. "+loadDialogue.getdiag("audreydialogue.txt","q1answer3:"));
+                String  answer=read.nextLine();
+                audreyq1(answer);
+                break;
 
-               break;
+            case "2":
+                int testrandomnumber = random.nextInt(8);
+                int testrandomnumber2 = testrandomnumber+1;
+                int testrandomnumber3 = testrandomnumber+2;
+                    System.out.println(loadDialogue.getdiag("audreydialogue.txt", "beforeplayerasks2:")+"\n");
+                    System.out.print("1. ");askquestion(testrandomnumber);
+                    System.out.println();
+                    System.out.print("2. ");askquestion(testrandomnumber2);
+                    System.out.println();
+                    System.out.print("3. ");askquestion(testrandomnumber3);
+                String choosequestion = read.nextLine();
+                switch(choosequestion) {
+                    case "1": answerquestion(testrandomnumber, "audreydialogue.txt");
+                        break;
+                    case "2": answerquestion(testrandomnumber2, "audreydialogue.txt");
+                        break;
+                    case "3": answerquestion(testrandomnumber3, "audreydialogue.txt");
+                        break;
+                }
+            break;
 
-           case "2":System.out.println(loadDialogue.getdiag("audreydialogue.txt", "beforeplayerasks2:"));
-           break;
+            case "3":
+                System.out.println(loadDialogue.getdiag("audreydialogue.txt", "datereject:"));
+                break;
 
-           case "3":
+            case "4": break;
 
-               System.out.println(loadDialogue.getdiag("audreydialogue.txt", "datereject:"));
-           break;
-
-           case "4": break;
-
-       }
-
-
-
-
+        }
 
    }
 
     public void introducebeli() {
-
         loadDialogue.alldiag("belidialogue.txt", "greeting1:");
         System.out.println("\n");
-
-
-        System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date \n4. Talk to another girl\n");
-
+        System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date " +
+                "\n4. Talk to another girl\n");
 
     }
 
+
+
+    public void beliq1(String answer)
+    {
+
+
+        if (answer.equals("1"))
+        {
+            System.out.print(loadDialogue.getdiag("belidialogue.txt", "ifcorrect1:"));
+        }
+        else
+        {
+
+            System.out.print(loadDialogue.getdiag("belidialogue.txt", "ifwrong1:"));
+            System.out.println("\n");
+        }
+
+    }
 
 
 
@@ -154,10 +260,33 @@ switch (convochoice)
         makeCharacter.loadCharacter();
         switch (convochoice)
         {
-            case "1": System.out.println(loadDialogue.getdiag("belidialogue.txt", "greeting2:"));
+            case "1": System.out.println(loadDialogue.getdiag("belidialogue.txt","question1:"));
+                System.out.println("1. "+ loadDialogue.getdiag("belidialogue.txt","q1answer1:"));
+                System.out.println("2. "+loadDialogue.getdiag("belidialogue.txt","q1answer2:"));
+                System.out.println("3. "+loadDialogue.getdiag("belidialogue.txt","q1answer3:"));
+
+                String  answer=read.nextLine();
+                beliq1(answer);
             break;
 
-            case "2":System.out.println(loadDialogue.getdiag("belidialogue.txt", "beforeplayerasks2:"));
+            case "2":System.out.println(loadDialogue.getdiag("belidialogue.txt", "beforeplayerasks2:")+"\n");
+                int testrandomnumber = random.nextInt(8);
+                int testrandomnumber2 = testrandomnumber+1;
+                int testrandomnumber3 = testrandomnumber+2;
+                System.out.print("1. ");askquestion(testrandomnumber);
+                System.out.println();
+                System.out.print("2. ");askquestion(testrandomnumber2);
+                System.out.println();
+                System.out.print("3. ");askquestion(testrandomnumber3);
+                String choosequestion = read.nextLine();
+                switch(choosequestion) {
+                    case "1": answerquestion(testrandomnumber, "belidialogue.txt");
+                        break;
+                    case "2": answerquestion(testrandomnumber2, "belidialogue.txt");
+                        break;
+                    case "3": answerquestion(testrandomnumber3, "belidialogue.txt");
+                        break;
+                }
             break;
 
             case "3":System.out.println(loadDialogue.getdiag("belidialogue.txt", "datereject:"));
@@ -176,13 +305,29 @@ switch (convochoice)
         System.out.println("\n");
 
 
-        System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date \n4. Talk to another girl\n");
-
+        System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date " +
+                "\n4. Talk to another girl\n");
 
     }
 
 
 
+    public void jessieq1(String answer)
+    {
+
+
+        if (answer.equals("2"))
+        {
+            System.out.print(loadDialogue.getdiag("jessiedialogue.txt", "ifcorrect1:"));
+        }
+        else
+        {
+
+            System.out.print(loadDialogue.getdiag("jessiedialogue.txt", "ifwrong1:"));
+            System.out.println("\n");
+        }
+
+    }
 
 
     public void talkjessie(String convochoice)
@@ -190,11 +335,34 @@ switch (convochoice)
         makeCharacter.loadCharacter();
         switch (convochoice)
         {
-            case "1": System.out.println(loadDialogue.getdiag("jessiedialogue.txt", "greeting2:"));
+            case "1": System.out.println(loadDialogue.getdiag("jessiedialogue.txt","question1:"));
+                System.out.println("1. "+ loadDialogue.getdiag("jessiedialogue.txt","q1answer1:"));
+                System.out.println("2. "+loadDialogue.getdiag("jessiedialogue.txt","q1answer2:"));
+                System.out.println("3. "+loadDialogue.getdiag("jessiedialogue.txt","q1answer3:"));
+
+                String  answer=read.nextLine();
+                jessieq1(answer);
                 break;
 
-            case "2":System.out.println(loadDialogue.getdiag("jessiedialogue.txt", "beforeplayerasks2:"));
-                break;
+            case "2":System.out.println(loadDialogue.getdiag("jessiedialogue.txt", "beforeplayerasks2:")+"\n");
+                int testrandomnumber = random.nextInt(8);
+                int testrandomnumber2 = testrandomnumber+1;
+                int testrandomnumber3 = testrandomnumber+2;
+                System.out.print("1. ");askquestion(testrandomnumber);
+                System.out.println();
+                System.out.print("2. ");askquestion(testrandomnumber2);
+                System.out.println();
+                System.out.print("3. ");askquestion(testrandomnumber3);
+                String choosequestion = read.nextLine();
+                switch(choosequestion) {
+                    case "1": answerquestion(testrandomnumber, "jessiedialogue.txt");
+                        break;
+                    case "2": answerquestion(testrandomnumber2, "jessiedialogue.txt");
+                        break;
+                    case "3": answerquestion(testrandomnumber3, "jessiedialogue.txt");
+                        break;
+                }
+            break;
 
             case "3":System.out.println(loadDialogue.getdiag("jessiedialogue.txt", "datereject:"));
                 break;
@@ -206,23 +374,32 @@ switch (convochoice)
     }
 
 
-
-
-
-
-
     public void introducekyanna() {
 
         loadDialogue.alldiag("kyannadialogue.txt", "greeting1:");
         System.out.println("\n");
-
-
-        System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date \n4. Talk to another girl\n");
-
+        System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date " +
+                "\n4. Talk to another girl\n");
 
     }
 
 
+    public void kyannaq1(String answer)
+    {
+
+
+        if (answer.equals("2"))
+        {
+            System.out.print(loadDialogue.getdiag("kyannadialogue.txt", "ifcorrect1:"));
+        }
+        else
+        {
+
+            System.out.print(loadDialogue.getdiag("kyannadialogue.txt", "ifwrong1:"));
+            System.out.println("\n");
+        }
+
+    }
 
 
     public void talkkyanna(String convochoice)
@@ -230,11 +407,34 @@ switch (convochoice)
         makeCharacter.loadCharacter();
         switch (convochoice)
         {
-            case "1": System.out.println(loadDialogue.getdiag("kyannadialogue.txt", "greeting2:"));
+            case "1":System.out.println(loadDialogue.getdiag("kyannadialogue.txt","question1:"));
+                System.out.println("1. "+ loadDialogue.getdiag("kyannadialogue.txt","q1answer1:"));
+                System.out.println("2. "+loadDialogue.getdiag("kyannadialogue.txt","q1answer2:"));
+                System.out.println("3. "+loadDialogue.getdiag("kyannadialogue.txt","q1answer3:"));
+
+                String  answer=read.nextLine();
+                kyannaq1(answer);
                 break;
 
-            case "2":System.out.println(loadDialogue.getdiag("kyannadialogue.txt", "beforeplayerasks2:"));
-                break;
+            case "2":System.out.println(loadDialogue.getdiag("kyannadialogue.txt", "beforeplayerasks2:")+"\n");
+                int testrandomnumber = random.nextInt(8);
+                int testrandomnumber2 = testrandomnumber+1;
+                int testrandomnumber3 = testrandomnumber+2;
+                System.out.print("1. ");askquestion(testrandomnumber);
+                System.out.println();
+                System.out.print("2. ");askquestion(testrandomnumber2);
+                System.out.println();
+                System.out.print("3. ");askquestion(testrandomnumber3);
+                String choosequestion = read.nextLine();
+                switch(choosequestion) {
+                    case "1": answerquestion(testrandomnumber, "kyannadialogue.txt");
+                        break;
+                    case "2": answerquestion(testrandomnumber2, "kyannadialogue.txt");
+                        break;
+                    case "3": answerquestion(testrandomnumber3, "kyannadialogue.txt");
+                        break;
+                }
+             break;
 
             case "3":System.out.println(loadDialogue.getdiag("kyannadialogue.txt", "datereject:"));
                 break;
@@ -246,32 +446,65 @@ switch (convochoice)
     }
 
 
-
-
-
-
     public void introducetiffany() {
 
         loadDialogue.alldiag("tiffanydialogue.txt", "greeting1:");
         System.out.println("\n");
-
-
-        System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date \n4. Talk to another girl\n");
-
-
+        System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date " +
+                "\n4. Talk to another girl\n");
     }
 
+
+    public void tiffanyq1(String answer)
+    {
+
+
+        if (answer.equals("3"))
+        {
+            System.out.print(loadDialogue.getdiag("tiffanydialogue.txt", "ifcorrect1:"));
+        }
+        else
+        {
+
+            System.out.print(loadDialogue.getdiag("tiffanydialogue.txt", "ifwrong1:"));
+            System.out.println("\n");
+        }
+
+    }
 
     public void talktiffany(String convochoice)
     {
         makeCharacter.loadCharacter();
         switch (convochoice)
         {
-            case "1": System.out.println(loadDialogue.getdiag("tiffanydialogue.txt", "greeting2:"));
+            case "1": System.out.println(loadDialogue.getdiag("tiffanydialogue.txt","question1:"));
+                System.out.println("1. "+ loadDialogue.getdiag("tiffanydialogue.txt","q1answer1:"));
+                System.out.println("2. "+loadDialogue.getdiag("tiffanydialogue.txt","q1answer2:"));
+                System.out.println("3. "+loadDialogue.getdiag("tiffanydialogue.txt","q1answer3:"));
+
+                String  answer=read.nextLine();
+                tiffanyq1(answer);
                 break;
 
-            case "2":System.out.println(loadDialogue.getdiag("tiffanydialogue.txt", "beforeplayerasks2:"));
-                break;
+            case "2":System.out.println(loadDialogue.getdiag("tiffanydialogue.txt", "beforeplayerasks2:")+"\n");
+                int testrandomnumber = random.nextInt(8);
+                int testrandomnumber2 = testrandomnumber+1;
+                int testrandomnumber3 = testrandomnumber+2;
+                System.out.print("1. ");askquestion(testrandomnumber);
+                System.out.println();
+                System.out.print("2. ");askquestion(testrandomnumber2);
+                System.out.println();
+                System.out.print("3. ");askquestion(testrandomnumber3);
+                String choosequestion = read.nextLine();
+                switch(choosequestion) {
+                    case "1": answerquestion(testrandomnumber, "tiffanydialogue.txt");
+                        break;
+                    case "2": answerquestion(testrandomnumber2, "tiffanydialogue.txt");
+                        break;
+                    case "3": answerquestion(testrandomnumber3, "tiffanydialogue.txt");
+                        break;
+                }
+            break;
 
             case "3":System.out.println(loadDialogue.getdiag("tiffanydialogue.txt", "datereject:"));
                 break;
@@ -289,10 +522,8 @@ switch (convochoice)
     {
         loadDialogue.alldiag("kyudialogue.txt", "greeting1:");
         System.out.println("\n");
-
-
-        System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date \n4. Talk to another girl\n");
-
+        System.out.println("\n \nWhat do you want to do? \n1. Talk to her \n2. Ask Question \n3. Ask on a date " +
+                "\n4. Talk to another girl\n");
 
     }
 
@@ -300,21 +531,17 @@ switch (convochoice)
 
     public void kyuq1(String answer)
     {
-
-
         if (answer.equals("2"))
         {
             System.out.print(loadDialogue.getdiag("kyudialogue.txt", "ifcorrect1:"));
         }
         else
         {
-
             System.out.print(loadDialogue.getdiag("kyudialogue.txt", "ifwrong1:"));
             System.out.println("\n");
         }
 
     }
-
 
 
     public void talkkyu(String convochoice)
@@ -326,12 +553,19 @@ switch (convochoice)
                 System.out.println("1. "+ loadDialogue.getdiag("kyudialogue.txt","q1answer1:"));
                 System.out.println("2. "+loadDialogue.getdiag("kyudialogue.txt","q1answer2:"));
                 System.out.println("3. "+loadDialogue.getdiag("kyudialogue.txt","q1answer3:"));
-
                 String  answer=read.nextLine();
                 kyuq1(answer);
                 break;
 
-            case "2":System.out.println(loadDialogue.getdiag("kyudialogue.txt", "beforeplayerasks2:"));
+            case "2":System.out.println(loadDialogue.getdiag("kyudialogue.txt", "beforeplayerasks2:")+"\n");
+                int testrandomnumber = random.nextInt(8);
+                int testrandomnumber2 = testrandomnumber+1;
+                int testrandomnumber3 = testrandomnumber+2;
+                System.out.print("1. ");askquestion(testrandomnumber);
+                System.out.println();
+                System.out.print("2. ");askquestion(testrandomnumber2);
+                System.out.println();
+                System.out.print("3. ");askquestion(testrandomnumber3);
                 break;
 
             case "3":
@@ -344,25 +578,23 @@ switch (convochoice)
             }
                 break;
 
-            case "4":
-                break;
+            case "4": break;
 
         }
     }
 
 
-
-
-
-
-
-    
     public void talkceleste(String convochoice)
     {
         makeCharacter.loadSecretCharacter();
         switch (convochoice)
         {
-            case "1":
+            case "1":System.out.println(loadDialogue.getdiag("celestedialogue.txt","question1:"));
+                System.out.println("1. "+ loadDialogue.getdiag("celestedialogue.txt","q1answer1:"));
+                System.out.println("2. "+loadDialogue.getdiag("celestedialogue.txt","q1answer2:"));
+                System.out.println("3. "+loadDialogue.getdiag("celestedialogue.txt","q1answer3:"));
+
+                String  answer=read.nextLine();
                 break;
 
             case "2":
@@ -383,15 +615,45 @@ switch (convochoice)
 
 
 
+public void askquestion(int randomnumber)
+{
+
+    switch(randomnumber)
+    {
+        case 0: System.out.println(loadDialogue.getdiag("questions.txt","asklastname:"));
+        break;
+        case 1: System.out.println(loadDialogue.getdiag("questions.txt","askbirthday:"));
+        break;
+        case 2:  System.out.println(loadDialogue.getdiag("questions.txt","askage:"));
+        break;
+        case 3: System.out.println(loadDialogue.getdiag("questions.txt","askheight:"));
+        break;
+        case 4: System.out.println(loadDialogue.getdiag("questions.txt","askweight:"));
+        break;
+        case 5: System.out.println(loadDialogue.getdiag("questions.txt","askoccupation:"));
+        break;
+        case 6: System.out.println(loadDialogue.getdiag("questions.txt","askeducation:"));
+        break;
+        case 7:  System.out.println(loadDialogue.getdiag("questions.txt","askhobby:"));
+        break;
+        case 8: System.out.println(loadDialogue.getdiag("questions.txt","askfavcolor:"));
+        break;
+        case 9:  System.out.println(loadDialogue.getdiag("questions.txt","askfavseason:"));
+        break;
+        case 10:  System.out.println(loadDialogue.getdiag("questions.txt","askfavhangout:"));
+        break;
+}
+
+
+}
 
 
 
-
-
-
-
-
-
+public void asksecretquestion()
+{
+    System.out.println(loadDialogue.getdiag("questions.txt","seccharasklastname:"));
+    System.out.println(loadDialogue.getdiag("questions.txt","seccharaskhomeworld:"));
+}
 
 
 
