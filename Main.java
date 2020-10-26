@@ -1,27 +1,19 @@
 package com.company;
 
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+
 
 import java.util.Scanner;
-import java.io.IOException;
-import java.io.FileNotFoundException;
-import java.util.HashMap;
-
+import java.util.Random;
 
 public class Main {
 
     public static void main(String[] args) {
 
-
+        Random random = new Random();
         Convo talking = new Convo();
-
         Scanner scan = new Scanner(System.in);
-
-
         DialogueLoader loadDialogue = new DialogueLoader();
-
         CharacterMaker makeCharacter = new CharacterMaker();
 
         makeCharacter.loadCharacter();
@@ -33,26 +25,21 @@ public class Main {
 
         Scenario scenario = new Scenario("beach");
 
-
         System.out.println("\nWhich girl would you like to talk to?" +
-                "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Kyu \n Exit\n");
-
+                "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Kyu \n  Exit\n");
 
         String convochoice = scan.nextLine();
-
 
         boolean exit = false;
 
 
-
-
-
         do
         {
-            switch (convochoice) {
+            switch (convochoice.toLowerCase()) {
 
                 case "aiko":
                     talking.introduceaiko();
+
                     String aikoconvo = scan.nextLine();
                     talking.talkaiko(aikoconvo);
 
@@ -64,9 +51,7 @@ public class Main {
                 case "audrey":
 
                     talking.introduceaudrey();
-
                     String audreyconvo = scan.nextLine();
-
                     talking.talkaudrey(audreyconvo);
                     System.out.println("\nWhich girl would you like to talk to?" +
                             "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
@@ -76,7 +61,6 @@ public class Main {
 
                 case "beli":
                     talking.introducebeli();
-
                     String beliconvo = scan.nextLine();
                     talking.talkbeli(beliconvo);
                     System.out.println("\nWhich girl would you like to talk to?" +
@@ -87,7 +71,6 @@ public class Main {
 
                 case "jessie":
                     talking.introducjessie();
-
                     String jessieconvo = scan.nextLine();
                     talking.talkjessie(jessieconvo);
                     System.out.println("\nWhich girl would you like to talk to?" +
@@ -98,7 +81,6 @@ public class Main {
 
                 case "kyanna":
                     talking.introducekyanna();
-
                     String kyannaconvo = scan.nextLine();
                     talking.talkkyanna(kyannaconvo);
                     System.out.println("\nWhich girl would you like to talk to?" +
@@ -134,7 +116,7 @@ public class Main {
 
 
                 default:
-                    System.out.println("Please enter the lowercase name of a girl.");
+                    System.out.println("Please enter the name of a girl.");
                     System.out.println("\nWhich girl would you like to talk to?" +
                             "\n  Aiko \n  Audrey \n  Beli \n  Jessie \n  Kyanna \n  Tiffany\n  Exit\n");
                     System.out.println("\n");
@@ -149,21 +131,5 @@ while(exit==false);
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-//decorator pattern
-
-
-
-
+    
     }
-
